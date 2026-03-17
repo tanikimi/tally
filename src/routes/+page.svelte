@@ -121,7 +121,9 @@
                 Kiminori Tanigawa
             </a>
             /
-            <a href="https://github.com/tanikimi" target="_blank"> GitHub </a>
+            <a href="https://github.com/tanikimi/tally" target="_blank">
+                GitHub
+            </a>
         </span>
     </footer>
 </div>

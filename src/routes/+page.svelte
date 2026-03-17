@@ -37,13 +37,13 @@
 
 <div class="main-container">
     <header>
-        <h1>Tally v1.0</h1>
+        <h1>Tally v1.1</h1>
     </header>
 
     <p>
         和歌山大学システム工学部の単位取得状況が簡単に確認できるシステムです。
         <br />
-        CSVファイルとエクセルファイルをアップロードすることで、取得済みの単位数を自動で計算することができます。
+        CSVファイルとエクセルファイルを選択することで、取得済みの単位数を自動で計算することができます。
         <br />
         なお、処理は全てブラウザ上で行われるため、ファイルの内容が外部に送信されることはありません。
     </p>
@@ -62,8 +62,8 @@
         </span>
     </div>
 
-    <nav>
-        <h2>CSVファイル</h2>
+    <div class="input_area">
+        <h2>① CSVファイル</h2>
         <input
             type="file"
             accept=".csv"
@@ -78,7 +78,7 @@
             </span>
         </div>
 
-        <h2>エクセルファイル</h2>
+        <h2>② 自分のメジャーのエクセルファイル</h2>
         <input
             type="file"
             accept=".xlsx"
@@ -92,7 +92,7 @@
                 単位確認資料
             </span>
         </div>
-    </nav>
+    </div>
 
     {#each summary as group}
         <div class="table">
@@ -131,7 +131,7 @@
 <style>
     * {
         /* fonts */
-        font-family: "Noto Sans JP", sans-serif;
+        font-family: "M PLUS Rounded 1c", sans-serif;
 
         /* colors */
         --gray: #f0f0f3;
@@ -149,7 +149,7 @@
         margin: 0 0 16px 0;
     }
 
-    nav {
+    .input_area {
         margin: 32px 0 64px 0;
     }
 
